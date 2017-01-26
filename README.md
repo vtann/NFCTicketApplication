@@ -45,8 +45,10 @@ Issue: add 1-day validity period and 10 uses to the card, set the authentication
 authentication configuration (AUTH0 and AUTH1)
 
 Add: add 1-day validity period and 10 uses to the card without deleting old usages
+
 -If the card is already expired (expiry time < current time):
 new expiry time = current time + validity period
+
 -If expiry time > = current time:
 new expiry time = old expiry time + validity period
 
