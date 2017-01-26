@@ -1,4 +1,4 @@
-1. Ticket layout
+1. Ticket layout:
 • Page 0,1: 7 bytes UID
 • Page 2: lock bytes
 • Page 3: OTP
@@ -13,7 +13,7 @@ o If the tag in page 5 is 0, page 6 stores the expiry Time.
 • Page 10 à 43: Not in use
 • Page 44 à 47: Authentication key
 
-2. Security mechanism
+2. Security mechanism:
 - After issuing the card, an authentication key is stored in page 44 à 47 in the card and
 unreadable. From this time, the card has to be authenticated (the key in the card has to be
 matched with the key on the application) before being written (adding or use the ticket).
