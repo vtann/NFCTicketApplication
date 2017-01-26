@@ -19,11 +19,12 @@ Page 7: stores the remaining uses of the ticket
 
 Page 8, 9: stores MAC. This MAC is calculated from page 0à7 and only 8 bytes are stored.
 
-Page 10 à 43: Not in use
+Page 10 to 43: Not in use
 
-Page 44 à 47: Authentication key
+Page 44 to 47: Authentication key
 
 2.Security mechanism:
+
 After issuing the card, an authentication key is stored in page 44 à 47 in the card and
 unreadable. From this time, the card has to be authenticated (the key in the card has to be
 matched with the key on the application) before being written (adding or use the ticket).
@@ -34,7 +35,7 @@ application validates the card, it will read data in page 0-7 to compute the MAC
 with the MAC stored in page 8-9. If the MAC is matched, the validation is passed and then the
 application starts writing new data to the card.
 
-3.Application’s features
+3.Application’s features:
 
 Erase: erase the ticket to blank
 
@@ -44,9 +45,9 @@ Issue: add 1-day validity period and 10 uses to the card, set the authentication
 authentication configuration (AUTH0 and AUTH1)
 
 Add: add 1-day validity period and 10 uses to the card without deleting old usages
-o If the card is already expired (expiry time < current time):
+-If the card is already expired (expiry time < current time):
 new expiry time = current time + validity period
-o If expiry time > = current time:
+-If expiry time > = current time:
 new expiry time = old expiry time + validity period
 
 Use: reduce 1 use from remaining uses
