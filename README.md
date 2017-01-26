@@ -6,8 +6,8 @@
 • Page 5: first-time-use tag. Stores 1 if the card has never been used by customer and 0 if the
 card has already been used.
 • Page 6:
-o If first-time-use tag in page 5 is 1, page 6 stores the validity period (number of days).
-o If the tag in page 5 is 0, page 6 stores the expiry Time.
+- If first-time-use tag in page 5 is 1, page 6 stores the validity period (number of days).
+- If the tag in page 5 is 0, page 6 stores the expiry Time.
 • Page 7: stores the remaining uses of the ticket
 • Page 8, 9: stores MAC. This MAC is calculated from page 0à7 and only 8 bytes are stored.
 • Page 10 à 43: Not in use
